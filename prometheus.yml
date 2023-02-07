@@ -1,0 +1,24 @@
+global:
+  scrape_interval: 1m
+
+scrape_configs:
+  - job_name: "prometheus"
+    scrape_interval: 1m
+    static_configs:
+    - targets: ["localhost:9090"]
+
+  - job_name: "node"
+    static_configs:
+    - targets: ["node-exporter:9100"]
+
+remote_write:
+  - url: "http://100.80.185.40:3000"
+    basic_auth:
+      username: "admin"
+      password: "eyJrIjoiSXVCV0tEcG1oMmgxblU5RTY0c1dPRDhDc3VRdkwyQ0oiLCJuIjoibGludXgiLCJpZCI6MX0="
+
+  - url: "http://91.170.61.8:3000"
+    basic_auth:
+      username: "admin"
+      password: "eyJrIjoiSXBhMG44djFBc29PRDI2c3lRb3FiMDBSeVRYUE1BNUUiLCJuIjoiS2V5IiwiaWQiOjF9"
+
