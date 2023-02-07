@@ -1,9 +1,9 @@
 global:
-  scrape_interval: 1m
+  scrape_interval: 5s
 
 scrape_configs:
   - job_name: "prometheus"
-    scrape_interval: 1m
+    scrape_interval: 5s
     static_configs:
     - targets: ["localhost:9090"]
 
@@ -21,4 +21,3 @@ remote_write:
     basic_auth:
       username: "admin"
       password: ""
-
