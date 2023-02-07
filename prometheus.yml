@@ -15,10 +15,10 @@ remote_write:
   - url: "http://100.80.185.40:3000"
     basic_auth:
       username: "admin"
-      password: "eyJrIjoiSXVCV0tEcG1oMmgxblU5RTY0c1dPRDhDc3VRdkwyQ0oiLCJuIjoibGludXgiLCJpZCI6MX0="
+      password: "<password>"
 
   - url: "http://91.170.61.8:3000"
     basic_auth:
       username: "admin"
-      password: "eyJrIjoiSXBhMG44djFBc29PRDI2c3lRb3FiMDBSeVRYUE1BNUUiLCJuIjoiS2V5IiwiaWQiOjF9"
+      password: ""
 
